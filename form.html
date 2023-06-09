@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="robots" content="index,follow">
+        <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+        <title>Formulario</title>
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                height: 100vh;
+
+                font-family: sans-serif;
+            }
+            
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+
+                width: 300px;
+                height: 300px;
+                background-color: darkgrey;
+
+                box-sizing: border-box;
+                border-radius: 20px;
+
+            }
+
+            h2 {
+                margin: 0;
+                font-size: 2.2em;
+            }
+
+            label {
+                width: 100%;
+            }
+
+            span {
+                display: block;
+                font-size: 20px;
+                margin: 2px 10px;
+            }
+
+            input {
+                height: 25px;
+                font-size: 16px;
+                margin: 0 10px;
+                width: 272px;
+
+                border-radius: 5px;
+                border: 0;
+            }
+
+            .btn {
+                width: 100px;
+                height: 30px;
+            }
+
+            label a {
+                display: block;
+                margin: 2px 15px;
+                text-align: right;
+                font-size: 14px;
+                font-style: italic;
+                text-decoration: underline;
+                color: #023e8a;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <form action="">
+            <h2>Login</h2>
+            <label for="user">
+                <span>Usuario</span>
+                <input type="text" id="user" placeholder="Nombre de usuario" name="user">
+            </label>
+            <label for="password">
+                <span>Contraseña</span>
+                <input type="password" id="password" placeholder="Contraseña" name="password">
+                <a href="#">Olvidé mi contraseña</a>
+            </label>
+            <input type="submit" class="btn">
+        </form> 
+    </body>
+
+</html>

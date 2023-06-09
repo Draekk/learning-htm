@@ -5,6 +5,7 @@
 body{
     margin: 0 5px;
     color: white;
+    font-family: sans-serif;
 }
 
 header {
@@ -34,7 +35,7 @@ img {
     background-color: black;
 }
 
-section, h1, h2, nav, ul, li, p {
+section, h1, h2, nav, ul, li, p, figcaption, figure {
     background: none;
 }
 
@@ -106,6 +107,37 @@ article a {
     background: none;
     color: white;
     font-weight: bold;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 5px;
+}
+
+figure img {
+    width: 40vw;
+    height: 30vw;
+
+    border-radius: 20px;
+    border: solid #1d3557;
+}
+
+#video-sect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 5px 0;
+}
+
+#video-sect video {
+    width: 80%;
+
+    border-radius: 20px;
+    border: solid #1d3557;
 }
 
 #sec-art h3 {
